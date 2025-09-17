@@ -1,13 +1,8 @@
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="max-w-6xl mx-auto px-4 py-16 transition-colors duration-300"
-    >
-      <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">
-        Contact
-      </h2>
-      <div className="text-center space-y-4 text-gray-700 dark:text-gray-300">
+    <section id="contact" className="max-w-6xl mx-auto px-4 py-16">
+      <h2 className="text-3xl font-bold mb-6 text-center">Contact</h2>
+      <div className="text-center space-y-4">
         <p>
           Email:{" "}
           <a

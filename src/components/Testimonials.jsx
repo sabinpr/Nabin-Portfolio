@@ -23,19 +23,17 @@ export default function Testimonials() {
       className="bg-blue-50 dark:bg-gray-800 py-16 px-4 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-          What Patients Say
-        </h2>
+        <h2 className="text-3xl font-bold mb-8">What Patients Say</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow hover:shadow-lg transition-colors duration-300"
+              className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow hover:shadow-lg transition"
             >
-              <p className="italic text-gray-800 dark:text-gray-200 transition-colors duration-300">
+              <p className="italic text-gray-800 dark:text-gray-200">
                 “{t.feedback}”
               </p>
-              <h4 className="mt-4 font-semibold text-blue-600 dark:text-blue-300 transition-colors duration-300">
+              <h4 className="mt-4 font-semibold text-blue-600 dark:text-blue-300">
                 - {t.name}
               </h4>
             </div>
