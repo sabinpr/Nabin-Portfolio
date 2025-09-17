@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-6xl mx-auto px-4 py-16 bg-blue-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-500 ease-in-out"
+      className="max-w-6xl mx-auto px-4 py-16 transition-colors duration-500 ease-in-out"
     >
       <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
       <p className="text-lg leading-relaxed text-center">
