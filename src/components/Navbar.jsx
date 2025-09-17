@@ -2,7 +2,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function Navbar({ dark, setDark }) {
   return (
-    <nav className="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-300">
+    <nav className="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-500 ease-in-out">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400">
           Dr. Nabin Prajapati

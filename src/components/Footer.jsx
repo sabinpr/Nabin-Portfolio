@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-100 py-6 transition-colors duration-300">
+    <footer className="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-100 py-6 transition-colors duration-500 ease-in-out">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
         <p className="mb-4 md:mb-0">
           © {new Date().getFullYear()} Dr. Nabin Prajapati. All rights reserved.

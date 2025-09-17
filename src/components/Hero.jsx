@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 text-center px-4 transition-colors duration-300">
+    <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 text-center px-4 transition-colors duration-500 ease-in-out">
       <h2 className="text-4xl md:text-5xl font-bold mb-4">
         Dr. Nabin Prajapati
       </h2>

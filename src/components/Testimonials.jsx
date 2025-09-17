@@ -20,7 +20,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="bg-blue-50 dark:bg-gray-800 py-16 px-4 transition-colors duration-300"
+      className="bg-blue-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 py-16 px-4 transition-colors duration-500 ease-in-out"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">What Patients Say</h2>

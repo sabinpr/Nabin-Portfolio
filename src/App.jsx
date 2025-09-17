@@ -26,7 +26,7 @@ function App() {
   }, [dark]);
 
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen transition-colors duration-500 ease-in-out bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Navbar dark={dark} setDark={setDark} />
       <main>
         <Hero />

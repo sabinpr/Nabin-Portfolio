@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-blue-50 dark:bg-gray-800 py-16 px-4 transition-colors duration-300"
+      className="bg-blue-50 dark:bg-gray-800 py-16 px-4 transition-colors duration-500 ease-in-out"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Services</h2>
