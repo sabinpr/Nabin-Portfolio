@@ -4,9 +4,23 @@ export default function Navbar({ dark, setDark }) {
   return (
     <nav className="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-500 ease-in-out">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400">
-          Dr. Nabin Prajapati
-        </h1>
+        {/* Logo + Desktop Nav */}
+        {/* Logo */}
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            e.currentTarget.blur();
+          }}
+          className="text-xl font-bold flex items-center h-8 transition-transform duration-300 hover:scale-105 cursor-pointer"
+        >
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-full pointer-events-none"
+          />
+        </a>
         <div className="flex items-center space-x-6">
           <ul className="flex space-x-6 text-sm md:text-base font-medium">
             <li>
