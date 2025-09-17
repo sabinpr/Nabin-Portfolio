@@ -5,6 +5,17 @@ export default function Navbar({ dark, setDark }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = ["about", "services", "achievements", "contact"];
 
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      window.scrollTo({
+        top: el.getBoundingClientRect().top + window.scrollY - 64, // navbar height offset
+        behavior: "smooth",
+      });
+    }
+    setMenuOpen(false); // close mobile menu after click
+  };
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-white dark:bg-gray-800 shadow-md transition-transform duration-300 ease-out">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -25,12 +36,12 @@ export default function Navbar({ dark, setDark }) {
         <ul className="hidden md:flex space-x-6 text-sm md:text-base font-medium">
           {navLinks.map((link) => (
             <li key={link}>
-              <a
-                href={`#${link}`}
+              <button
+                onClick={() => handleScroll(link)}
                 className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
                 {link.charAt(0).toUpperCase() + link.slice(1)}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -57,20 +68,19 @@ export default function Navbar({ dark, setDark }) {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden origin-top transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? "scale-y-100" : "scale-y-0"
-        } bg-white dark:bg-gray-800`}
+        className={`md:hidden overflow-hidden bg-white dark:bg-gray-800 transition-all duration-300 ease-in-out ${
+          menuOpen ? "max-h-96 py-4" : "max-h-0 py-0"
+        }`}
       >
-        <ul className="flex flex-col items-center space-y-4 py-4 text-sm font-medium">
+        <ul className="flex flex-col items-center space-y-4 text-sm font-medium">
           {navLinks.map((link) => (
             <li key={link}>
-              <a
-                href={`#${link}`}
-                onClick={() => setMenuOpen(false)}
+              <button
+                onClick={() => handleScroll(link)}
                 className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
                 {link.charAt(0).toUpperCase() + link.slice(1)}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
