@@ -1,30 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-100 py-6 transition-colors duration-500 ease-in-out">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-        <p className="mb-4 md:mb-0">
+    <footer className="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-100 py-6 transition-colors duration-500 ease-in-out border-t border-gray-700 dark:border-gray-600">
+      <div className="max-w-6xl mx-auto flex flex-col items-center px-4 space-y-2">
+        {/* Copyright */}
+        <p className="text-sm md:text-base text-center">
           © {new Date().getFullYear()} Dr. Nabin Prajapati. All rights reserved.
         </p>
-        <div className="flex space-x-6 text-sm">
-          <a
-            href="#about"
-            className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
-          >
-            About
-          </a>
-          <a
-            href="#services"
-            className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
-          >
-            Services
-          </a>
-          <a
-            href="#contact"
-            className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
-          >
-            Contact
-          </a>
-        </div>
+
+        {/* Tagline */}
+        <p className="text-gray-400 text-sm md:text-base text-center italic">
+          Dedicated to Compassionate, Patient-Centered Healthcare
+        </p>
       </div>
     </footer>
   );

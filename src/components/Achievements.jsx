@@ -31,7 +31,7 @@ export default function Achievements() {
       id="achievements"
       className="max-w-6xl mx-auto px-4 py-16 transition-colors duration-500 ease-in-out"
     >
-      <h2 className="text-3xl font-bold mb-12 text-center text-blue-900 dark:text-cyan-300">
+      <h2 className="text-3xl font-bold mb-12 text-center text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
         Achievements
       </h2>
 
@@ -40,7 +40,8 @@ export default function Achievements() {
           <div
             key={index}
             className="flex items-start p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md 
-                       hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+                       hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-floatUp"
+            style={{ animationDelay: `${index * 150}ms` }}
           >
             <span className="text-3xl text-blue-600 dark:text-cyan-300 mr-4">
               {item.icon}

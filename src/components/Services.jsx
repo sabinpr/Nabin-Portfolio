@@ -32,7 +32,7 @@ export default function Services() {
       className="bg-blue-50 dark:bg-gray-900 py-16 px-4 transition-colors duration-500 ease-in-out"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-blue-900 dark:text-cyan-300">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
           Services
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -40,7 +40,8 @@ export default function Services() {
             <div
               key={idx}
               className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md 
-                         hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+                         hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-floatUp"
+              style={{ animationDelay: `${idx * 150}ms` }}
             >
               <span className="text-4xl text-blue-600 dark:text-cyan-300 mb-4">
                 {service.icon}

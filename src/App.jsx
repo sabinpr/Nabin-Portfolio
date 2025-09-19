@@ -7,6 +7,7 @@ import Achievements from "./components/Achievements";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SectionWrapper from "./components/SectionWrapper";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -18,23 +19,37 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("darkMode", dark);
-    if (dark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    if (dark) document.documentElement.classList.add("dark");
+    else document.documentElement.classList.remove("dark");
   }, [dark]);
 
   return (
-    <div className="min-h-screen transition-colors duration-500 ease-in-out bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen transition-colors duration-500 ease-in-out bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Navbar dark={dark} setDark={setDark} />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Achievements />
-        <Testimonials />
-        <Contact />
+      <main className="pt-16">
+        <SectionWrapper parallax speed={0.1}>
+          <Hero />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <About />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Services />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Achievements />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Testimonials />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Contact />
+        </SectionWrapper>
       </main>
       <Footer />
     </div>
