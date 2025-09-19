@@ -10,21 +10,23 @@ export default function Hero() {
         backgroundImage: `url(${doctorBg})`,
       }}
     >
-      <div className="relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-900 dark:text-cyan-200 drop-shadow-lg">
+      <div className="relative z-10 bg-white/70 dark:bg-black/60 px-6 py-8 rounded-2xl shadow-lg backdrop-blur-sm">
+        <h2
+          className="text-4xl md:text-5xl font-extrabold mb-4
+                     bg-gradient-to-r from-blue-700 via-cyan-600 to-blue-500 
+                     dark:from-cyan-200 dark:via-teal-300 dark:to-blue-200 
+                     bg-clip-text text-transparent drop-shadow-lg"
+        >
           Dr. Nabin Prajapati
         </h2>
-        <p className="text-lg md:text-xl mb-6 max-w-2xl text-blue-800 dark:text-cyan-100 drop-shadow-md">
+        <p
+          className="text-lg md:text-xl max-w-2xl leading-relaxed
+                     text-gray-800 dark:text-gray-100"
+        >
           Internal Medicine Specialist with experience in Nepal, the UK, and
           currently practicing in Australia. Dedicated to providing
           compassionate, patient-centered, and evidence-based healthcare.
         </p>
-        <a
-          href="#contact"
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          Book Appointment
-        </a>
       </div>
     </section>
   );
