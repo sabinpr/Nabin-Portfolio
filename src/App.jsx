@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SEO from "./components/SEO";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -25,7 +26,16 @@ function App() {
 
   return (
     <div className="min-h-screen transition-colors duration-500 ease-in-out bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      {/* SEO for the portfolio */}
+      <SEO
+        title="Nabin Prajapati | Doctor"
+        description="Portfolio of Nabin Prajapati — showcasing professional experience and services as a doctor."
+        url="https://www.nabin-prajapati.com.np/"
+        image="https://www.nabin-prajapati.com.np/logo.png"
+      />
+
       <Navbar dark={dark} setDark={setDark} />
+
       <main className="pt-16">
         <SectionWrapper parallax speed={0.1}>
           <Hero />
@@ -51,6 +61,7 @@ function App() {
           <Contact />
         </SectionWrapper>
       </main>
+
       <Footer />
     </div>
   );
