@@ -43,11 +43,11 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-1 text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
             Contact
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 animate-fadeSlideUp">
             Get in touch for professional inquiries
           </p>
         </div>
