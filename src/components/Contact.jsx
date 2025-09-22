@@ -44,7 +44,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-blue-900 dark:text-cyan-300 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
             Contact
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400">

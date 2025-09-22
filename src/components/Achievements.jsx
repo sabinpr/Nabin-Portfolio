@@ -31,7 +31,7 @@ export default function Achievements() {
       id="achievements"
       className="max-w-6xl mx-auto px-4 py-16 transition-colors duration-500 ease-in-out"
     >
-      <h2 className="text-3xl font-bold mb-12 text-center text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-900 dark:text-cyan-300 animate-fadeSlideUp">
         Achievements
       </h2>
 

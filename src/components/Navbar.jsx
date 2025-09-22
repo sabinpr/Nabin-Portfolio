@@ -5,7 +5,13 @@ export default function Navbar({ dark, setDark }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const navLinks = ["about", "services", "achievements", "contact"];
+  const navLinks = [
+    "about",
+    "services",
+    "achievements",
+    "testimonials",
+    "contact",
+  ];
 
   // Scroll to section
   const handleScroll = (id) => {
