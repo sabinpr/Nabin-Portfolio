@@ -79,7 +79,7 @@ const Contact = () => {
                     </svg>
                     <a
                       href="mailto:nabinprajapati14@gmail.com"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:dark:text-blue-400"
+                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:dark:text-cyan-300"
                     >
                       nabinprajapati14@gmail.com
                     </a>
