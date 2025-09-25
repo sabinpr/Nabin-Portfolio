@@ -19,7 +19,7 @@ const Contact = () => {
 
     try {
       const res = await fetch(
-        "https://portfolio-backend-6g0v.onrender.com/api/contact-nabin/",
+        "https://portfolio-backend-jx1d.onrender.com/api/contact-nabin/",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
