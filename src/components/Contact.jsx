@@ -28,14 +28,19 @@ const Contact = () => {
       );
 
       if (res.ok) {
-        setStatus("success");
         setFormData({ name: "", email: "", message: "" });
+        setStatus("success");
+
+        // ✅ clear success message after 5 seconds
+        setTimeout(() => setStatus(null), 5000);
       } else {
         setStatus("error");
+        setTimeout(() => setStatus(null), 5000); // auto-clear error too (optional)
       }
     } catch (err) {
       console.error(err);
       setStatus("error");
+      setTimeout(() => setStatus(null), 5000); // auto-clear error too
     }
   };
 
